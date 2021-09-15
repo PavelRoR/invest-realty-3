@@ -43,6 +43,8 @@ footer
 	text-transform uppercase
 	color #fff
 	background-color: #cc922f
+	position relative
+	z-index 32
 	transition all .3s ease
 	&:focus
 		color #fff
@@ -51,8 +53,11 @@ footer
 		color #fff
 		background-color: #cc922f - 20%
 		text-decoration none
+	@media screen and (max-width 1199px)
+		font-size: 15px
 	@media screen and (max-width 386px)
 		padding 17px 20px
+		text-align: center
 .general-title
 	text-align center
 	text-transform uppercase

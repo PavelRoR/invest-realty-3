@@ -6,9 +6,9 @@ header
 		margin-bottom: 120px
 	@media screen and (max-width 991px)
 		margin-bottom: 20px
+		text-align center
 	@media screen and (max-width 767px)
 		padding 15px 0
-		text-align center
 	@media screen and (max-width: 560px)
 		text-align left
 		margin-bottom: 10px
@@ -38,16 +38,19 @@ header
 		font-size: 14px
 		float: left
 		text-align: left
+		@media screen and (max-width 991px)
+			width 100%
+			max-width 193px
 	&&-mobile
 		display none
 		position relative
 		z-index 200
 		@media screen and (max-width 560px)
 			display block
-	@media screen and (max-width 767px)
+	@media screen and (max-width 991px)
 		float: none
 		display inline-block
-		margin-bottom: 5px
+		margin:0 auto 5px
 	@media screen and (max-width 560px)
 		width 160px
 		&-text
@@ -60,7 +63,7 @@ header
 	float: right
 	text-align right
 	line-height: 1.315
-	@media screen and (max-width 767px)
+	@media screen and (max-width 991px)
 		float: none
 		// display inline-block
 		text-align center
