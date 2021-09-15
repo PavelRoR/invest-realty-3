@@ -1,0 +1,51 @@
+-var path = '';
+-var head_url = 'https://invest-realty2.mycapitalland.ru/';
+-var head_title = '«Инвестиции в доходную недвижимость»';
+-var head_description = 'Короткий путь к финансовой свободе';
+//-var head_img = 'img/banner.jpg';
+-var styles = path+'css/styles.min.css';
+-var fav_ap = path+'favicon.svg';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var libsScripts = path+'js/libs.min.js';
+-var scripts = path+'js/scripts.js';
+//- -var noref = true
+//- -var action = '';
+//- -var group = '';
+//- -var formId = '';
+//- -var formVc = '';
+//- -var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+//- -var ak = true
+
+mixin b(img, cl, clb, href='', p, target, id)
+	.button-wrapper(class=cl)
+		a.button(class=clb href=href target=target id=id)
+			if img
+				+imgs('', path+'img/icons/tg-white.png', 'Telegram')
+			span!=' '+p
+mixin gt(cl, h3,sp)
+	h3.general-title!=h3
+		if sp
+			span!=sp
+mixin imgs(cl, src, alt)
+	img(class=cl src=path+src alt=alt)
+
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+		//- include pug/scripts/head_scripts
+	body
+		//- include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/main/1-main
+			include pug/main/2-cliches
+			include pug/main/3-details
+			include pug/main/4-projects
+			include pug/main/5-who
+			include pug/main/6-why
+			include pug/base/2-footer
+		include pug/base/3-scripts
+		//- include pug/scripts/chat
+		//- include pug/scripts/body_bottom_scripts

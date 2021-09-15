@@ -1,0 +1,36 @@
+mixin sl(cl,sLink)
+	a.soc-link(class!='soc-link-'+cl href!=sLink target="_blank")
+footer
+	.container
+		h5.footer-title Вкладывайте средства 
+			br
+			| в самый стабильный инструмент 
+			br
+			| для инвестирования!
+		p.footer-subtitle ПОДПИСЫВАЙТЕСЬ НА НОВОСТИ, ЧТОБЫ ВСЕГДА БЫТЬ В КУРСЕ 
+			br
+			| САМЫХ ЛУЧШИХ ПРЕДЛОЖЕНИЙ ПО ИНВЕСТИРОВАНИЮ!
+		.soc-links
+			|
+			|
+			+sl('vk','https://vk.com/mycapital_ru')
+			|
+			|
+			+sl('yt','https://www.youtube.com/channel/UCeQu4s1IZ6c-w-K8q15wF1w')
+			|
+			|
+			+sl('insta','https://www.instagram.com/mycapital.ru/')
+			|
+			|
+			+sl('tg','https://t.me/my_capital_club')
+			|
+			|
+			+sl('fb','https://facebook.com/MyCapitalRu/')
+		p.footer-text ООО «Зона Комфорта»,
+		p.footer-text ИНН 5029196740, ОГРН 1155029003293
+		p.footer-text Телефон: 
+			a(href="tel:+74950230110" target='_blank') +7 (495) 023-01-10
+		p.footer-text E-mail: 
+			a(href="mailto:info@mycapital.fund" target='_blank') info@mycapital.fund
+		p.footer-text 
+			a(href="politics.pdf" target='_blank') Политика конфиденциальности

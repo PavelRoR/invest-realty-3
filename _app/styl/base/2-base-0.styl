@@ -1,0 +1,140 @@
+*
+	margin 0
+	padding 0
+	outline none
+body
+	font-size: 18px
+	font-family: G
+	font-weight: normal
+	color #fff
+	background-color #131313
+	line-height: 1.5
+.wrapper
+	overflow hidden
+.content
+	position relative
+	z-index 60
+a
+	color: #000
+	&:focus
+		outline: 0
+		text-decoration none
+	&:hover
+		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-weight normal
+	margin 0
+button
+	border none
+section
+header
+footer
+	width 100%
+	display block
+.video-wrapper
+	margin 0 auto
+	position relative
+	width 100%
+	top 0
+	// z-index 60
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #000
+		border-radius 0
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+		margin 0 auto
+.button
+	display inline-block
+	width auto
+	padding 26px 23px
+	border-radius: 8px
+	font-size: 16px
+	text-transform uppercase
+	color #fff
+	transition all .3s ease
+	&:focus
+		color #fff
+		text-decoration none
+	&:hover
+		color #fff
+		text-decoration none
+	@media screen and (max-width 386px)
+		padding 17px 20px
+.button-tg
+	background-color: #009de9
+	font-weight: bold
+	img
+		display inline-block
+		vertical-align: middle
+		margin-right: 10px
+	&:hover
+		background-color: #009de9 - 20%
+.button-ap
+	background-color: #cc922f
+	&:hover
+		background-color: #cc922f - 20%
+	@media screen and (max-width 560px)
+		text-align center
+.button-tg-big
+	width 100%
+	max-width 380px
+	display flex
+	align-items: center
+	justify-content: space-between
+	margin 0 auto
+	text-align: left
+.general-title
+	text-align center
+	text-transform uppercase
+	margin-bottom: 40px
+	font-size: 45px
+	font-weight: 900
+	color #cc922f
+	line-height: 43px
+	position relative
+	z-index 40
+	span
+		display block
+		font-size: 30px
+		font-weight: bold
+		color #d2c2a0
+	@media screen and (max-width 991px)
+		font-size: 34px
+		span
+			font-size: 24px
+	@media screen and (max-width 560px)
+		font-size: 28px
+		line-height: 1.1
+		margin-bottom: 30px
+		span
+			font-size: 22px
+	@media screen and (max-width 386px)
+		font-size: 26px
+		span
+			font-size: 20px
+@media screen and (max-width 991px)
+	br
+		display none
