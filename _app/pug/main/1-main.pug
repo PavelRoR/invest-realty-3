@@ -21,11 +21,9 @@ section#main
 						| Доходность инвестора – от 24% годовых
 				p.main-text Жильё – самый стабильный и высокодоходный инструмент приумножения капитала!
 				h3.main-cta Откройте его для себя!
-				+b('1', '', 'button-tg', href, 'Подписаться')
+				+b('', 'button-up', href, 'НАЧАТЬ ИНВЕСТИРОВАТЬ ПРЯМО СЕЙЧАС')
 			.col-md-7
-				.main-img
-					+imgs('', 'img/images/main.png', 'Картинка блока')
-					.main-img-text
-						p
-							span Узнайте подробнее уже сегодня! 
-							| Подписывайтесь на закрытый Telegram-бот и узнайте секреты инвестирования в доходную недвижимость!
+				.main-video-container
+					.video-wrapper.video-wrapper-main
+						+imgs('video-wrapper-laptop', 'img/images/laptop.png', 'Ноутбук')
+						iframe(src='https://www.youtube.com/embed/qPoL4osJtvs?modestbranding=0&autoplay=1&mute=1' allowfullscreen)

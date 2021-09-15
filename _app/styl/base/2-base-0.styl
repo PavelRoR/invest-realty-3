@@ -31,81 +31,28 @@ header
 footer
 	width 100%
 	display block
-.video-wrapper
-	margin 0 auto
-	position relative
-	width 100%
-	top 0
-	// z-index 60
-	&:before
-		content ''
-		height 0
-		padding-top 56.25%
-		display block
-	&:after
-		content: ''
-		display block
-		position: absolute
-		top: 0
-		left 0
-		right 0
-		width: 100%
-		height 70px
-	img,
-	iframe
-		position absolute
-		width 100%
-		height 100%
-		display block
-		background-color #000
-		border-radius 0
-		border: 0
-		top 0
-		left 0
-		right 0
-		bottom 0
-		cursor pointer
-		margin 0 auto
 .button
+	&-wrapper
+		&-center
+			text-align center
 	display inline-block
 	width auto
-	padding 26px 23px
+	padding 26px 20px
 	border-radius: 8px
 	font-size: 16px
 	text-transform uppercase
 	color #fff
+	background-color: #cc922f
 	transition all .3s ease
 	&:focus
 		color #fff
 		text-decoration none
 	&:hover
 		color #fff
+		background-color: #cc922f - 20%
 		text-decoration none
 	@media screen and (max-width 386px)
 		padding 17px 20px
-.button-tg
-	background-color: #009de9
-	font-weight: bold
-	img
-		display inline-block
-		vertical-align: middle
-		margin-right: 10px
-	&:hover
-		background-color: #009de9 - 20%
-.button-ap
-	background-color: #cc922f
-	&:hover
-		background-color: #cc922f - 20%
-	@media screen and (max-width 560px)
-		text-align center
-.button-tg-big
-	width 100%
-	max-width 380px
-	display flex
-	align-items: center
-	justify-content: space-between
-	margin 0 auto
-	text-align: left
 .general-title
 	text-align center
 	text-transform uppercase

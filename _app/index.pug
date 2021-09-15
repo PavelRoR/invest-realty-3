@@ -1,5 +1,5 @@
 -var path = '';
--var head_url = 'https://invest-realty2.mycapitalland.ru/';
+-var head_url = 'https://invest-realty3.mycapitalland.ru/';
 -var head_title = '«Инвестиции в доходную недвижимость»';
 -var head_description = 'Короткий путь к финансовой свободе';
 //-var head_img = 'img/banner.jpg';
@@ -18,12 +18,9 @@
 //- -var oferta = 'https://mastervision.su/oferta.docx'
 //- -var ak = true
 
-mixin b(img, cl, clb, href='', p, target, id)
+mixin b(cl, clb, href='#Modal', p, target, id)
 	.button-wrapper(class=cl)
-		a.button(class=clb href=href target=target id=id)
-			if img
-				+imgs('', path+'img/icons/tg-white.png', 'Telegram')
-			span!=' '+p
+		a.button(class=clb href=href target=target id=id)=p
 mixin gt(cl, h3,sp)
 	h3.general-title!=h3
 		if sp
@@ -47,5 +44,6 @@ html(lang="ru")
 			include pug/main/6-why
 			include pug/base/2-footer
 		include pug/base/3-scripts
+		include pug/main/7-modal
 		//- include pug/scripts/chat
 		//- include pug/scripts/body_bottom_scripts
