@@ -76,12 +76,9 @@ $(document).ready(function () {
             }
         });
     });
-    // Модалка
-    $('.modal-up').magnificPopup({
-        type: 'image',
-        midClick: true, 
-        mainClass: 'mfp-fade'
+    $('.button-oasis').on('click', function(){
+        var mAt = $('.modal-video').attr('src');
+        $('.modal-video').attr('src', mAt+'&autoplay=1');
     });
-
     /*Конец документа*/
 });

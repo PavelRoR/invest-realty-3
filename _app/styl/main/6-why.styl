@@ -1,13 +1,23 @@
 #why
 	padding 0
+.why-list-wrapper
+	background-image: url(../img/images/details-1.png)
+	background-repeat: no-repeat
+	background-position: center right
+	background-size: 50%
+	@media screen and (max-width 991px)
+		background-position: center
+		background-size: 100%
 .why-img
 	display block
-	margin 20px auto 0
+	margin 100px auto 0
 	width 100%
 	max-width 592px
 .why-list
 	list-style: none;
 	counter-reset: my-counter;
+	width 100%
+	max-width 800px
 	@media screen and (max-width 991px)
 		margin-top: 40px
 		@media screen and (max-width 560px)
@@ -17,6 +27,8 @@
 		position: relative;
 		margin-bottom: 25px
 		padding-left: 25px
+		span
+			font-weight: bold
 		@media screen and (max-width 560px)
 			margin-bottom 15px
 		&:last-child
